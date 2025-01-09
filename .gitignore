@@ -40,75 +40,85 @@ build/Release
 
 # Dependency directories
 node_modules/
-jspm_packages/
 
-# Snowpack dependency directory (https://snowpack.dev/)
-web_modules/
+# Visual Studio 6 build log
+*.plg
 
-# TypeScript cache
-*.tsbuildinfo
+# Visual Studio 6 workspace options file
+*.opt
 
-# Optional npm cache directory
-.npm
+# Visual Studio 6 auto-generated workspace file (contains which files were open etc.)
+*.vbw
 
-# Optional eslint cache
-.eslintcache
+# Visual Studio 6 auto-generated project file (contains which files were open etc.)
+*.vbp
 
-# Optional stylelint cache
-.stylelintcache
+# Visual Studio 6 workspace and project file (working project files containing files to include in project)
+*.dsw
+*.dsp
 
-# Microbundle cache
-.rpt2_cache/
-.rts2_cache_cjs/
-.rts2_cache_es/
-.rts2_cache_umd/
+# Visual Studio 6 technical files
+*.ncb
+*.aps
 
-# Optional REPL history
-.node_repl_history
+# Visual Studio LightSwitch build output
+**/*.HTMLClient/GeneratedArtifacts
+**/*.DesktopClient/GeneratedArtifacts
+**/*.DesktopClient/ModelManifest.xml
+**/*.Server/GeneratedArtifacts
+**/*.Server/ModelManifest.xml
+_Pvt_Extensions
 
-# Output of 'npm pack'
-*.tgz
+# Paket dependency manager
+.paket/paket.exe
+paket-files/
 
-# Yarn Integrity file
-.yarn-integrity
+# FAKE - F# Make
+.fake/
 
-# dotenv environment variable files
-.env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
+# CodeRush personal settings
+.cr/personal
 
-# parcel-bundler cache (https://parceljs.org/)
-.cache
-.parcel-cache
+# Python Tools for Visual Studio (PTVS)
+__pycache__/
+*.pyc
 
-# Next.js build output
-.next
-out
+# Cake - Uncomment if you are using it
+# tools/**
+# !tools/packages.config
 
-# Nuxt.js build / generate output
-.nuxt
-dist
+# Tabs Studio
+*.tss
 
-# Gatsby files
-.cache/
-# Comment in the public line in if your project uses Gatsby and not Next.js
-# https://nextjs.org/blog/next-9-1#public-directory-support
-# public
+# Telerik's JustMock configuration file
+*.jmconfig
 
-# vuepress build output
-.vuepress/dist
+# BizTalk build output
+*.btp.cs
+*.btm.cs
+*.odx.cs
+*.xsd.cs
 
-# vuepress v2.x temp and cache directory
-.temp
-.cache
+# OpenCover UI analysis results
+OpenCover/
 
-# Docusaurus cache and generated files
-.docusaurus
+# Azure Stream Analytics local run output
+ASALocalRun/
 
-# Serverless directories
-.serverless/
+# MSBuild Binary and Structured Log
+*.binlog
+
+# NVidia Nsight GPU debugger configuration file
+*.nvuser
+
+# MFractors (Xamarin productivity tool) working folder
+.mfractor/
+
+# Local History for Visual Studio
+.localhistory/
+
+# Visual Studio History (VSHistory) files
+.vshistory/
 
 # FuseBox cache
 .fusebox/
@@ -116,15 +126,56 @@ dist
 # DynamoDB Local files
 .dynamodb/
 
-# TernJS port file
-.tern-port
+# Ionide (cross platform F# VS Code tools) working folder
+.ionide/
 
-# Stores VSCode versions used for testing VSCode extensions
-.vscode-test
+# Fody - auto-generated XML schema
+FodyWeavers.xsd
 
-# yarn v2
-.yarn/cache
-.yarn/unplugged
-.yarn/build-state.yml
-.yarn/install-state.gz
-.pnp.*
+# VS Code files for those working on multiple tools
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+# Windows Installer files from build outputs
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# JetBrains Rider
+*.sln.iml
+
+
+# Dependencies
+node_modules/
+vendor/
+
+# Build outputs
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# React App files to exclude if they're unnecessary
+my-react-app/node_modules/
+my-react-app/build/
