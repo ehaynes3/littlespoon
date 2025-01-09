@@ -52,7 +52,9 @@ class Account{
         if ($em != $em2) {
             array_push($this->errorArray, Constants::$emailsDontMatch);
         }
-        if(!filter_var($em, FILTER_VALIDATE_EMAIL))
+        if(!filter_var($em, FILTER_VALIDATE_EMAIL)) {
+            
+        }
     }
 
 
