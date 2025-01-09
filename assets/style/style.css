@@ -1,0 +1,82 @@
+html, /*Applies style to html and body elements. Gets rid of default margin */
+body{
+    height: 100%;
+    padding: 0; /*Margin inside the container*/
+    margin: 0; /*Margin outside the container */
+} 
+*{
+    font-family: Arial, Helvetica, sans-serif ;
+    color: #333;
+    box-sizing: border-box; /*Width and height is calculated accounting for padding.*/
+}
+.signinContainer {
+    background-color: #efefee;
+    height: 100vh; /*Entire height of the page */
+    display: flex; /*Flexes to the width of the screen */
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    background-color: #fff;
+    min-height: 300px;
+    max-height: 100%;
+    width: 450px;
+    box-shadow: rgba(0,0,0,0.1) 0 1px 2px; /*Sets shadow on the column. RGBA= red,green,blue, transparency. PX = Horizontal offset, vertical offset, and blur*/
+    padding: 20px 35px;
+    overflow-y: auto; /* adds scroll bar if it is needed*/
+}
+
+.column form {
+    display: flex; /*Sets up a flexible box layout that adjusts the size and position of elements inside it to fit best in the available space*/
+    flex-direction: column;/* Orients the elements into a column*/
+}
+
+.column form input[type="text"],
+.column form input[type="email"],
+.column form input[type="password"] {
+    font-size: 14px;
+    margin: 10px 0; /*10 Top/bottom 0 left/right --- This sets the margin of the input boxes*/
+    border: none;
+    border-bottom: 1px solid #dedede;
+}
+.column form input[type="submit"]{
+        background-color: #4285f4;
+        color: #fff;
+        height: 36px ;
+        width: 88px;
+        border: none;
+        border-radius: 3px;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 16px;
+
+}
+.column .header {
+    padding: 20px 0;
+    
+}
+.column .header h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 0;
+    color: #000;
+}
+
+.column .header span{
+    font-size: 14px;
+    
+}
+.column .header img{
+    width: 100px;
+}
+
+.signInMessage{
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none; /*Removes text underline*/
+}
